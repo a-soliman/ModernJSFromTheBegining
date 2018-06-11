@@ -14,8 +14,6 @@ val = String([1,2,3]);
 // ToString
 val = (5).toString();
 
-
-
 // String to number
 val = Number('5');
 val = Number(true);
