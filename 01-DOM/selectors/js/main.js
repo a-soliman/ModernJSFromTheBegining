@@ -33,4 +33,4 @@ const items = document.querySelectorAll('ul.collection li.collection-item');
 
 items.forEach( (item) => {
     item.style.color = 'red';
-})
+});
