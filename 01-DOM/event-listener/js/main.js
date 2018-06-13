@@ -1,11 +1,30 @@
-const button = document.querySelector('a.clear-tasks');
-button.addEventListener('click', function(e) {
-    e.preventDefault();
-    console.log(e);
-    console.log(this);
-    this.style.backgroundColor = '#fff';
-    this.classList.toggle('black');
-    this.classList.toggle('text-primary');
-});
+const clearButton = document.querySelector('a.clear-tasks');
+const card = document.querySelector('.card');
+const heading = document.querySelector('h5');
 
-console.log(button);
+clearButton.addEventListener('click', runEvent);
+clearButton.addEventListener('dblclick', runEvent);
+clearButton.addEventListener('mousedown', runEvent);
+clearButton.addEventListener('mouseenter', runEvent);
+clearButton.addEventListener('mouseleave', runEvent);
+clearButton.addEventListener('mouseover', runEvent);
+clearButton.addEventListener('mouseout', runEvent);
+
+document.addEventListener('mousemove', updatexy);
+
+
+
+
+function runEvent( e ) {
+    e.preventDefault();
+    console.log(e.clientX)
+    console.log(`Event type: ${e.type}`);
+}
+
+function updatexy(e) {
+    const ele = document.querySelector('h5');
+    const x = e.clientX;
+    const y = e.clientY;
+
+    ele.innerText = `X: ${x}, Y: ${y}`;
+}
