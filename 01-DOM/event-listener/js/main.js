@@ -13,8 +13,6 @@ clearButton.addEventListener('mouseout', runEvent);
 document.addEventListener('mousemove', updatexy);
 
 
-
-
 function runEvent( e ) {
     e.preventDefault();
     console.log(e.clientX)
@@ -27,4 +25,6 @@ function updatexy(e) {
     const y = e.clientY;
 
     ele.innerText = `X: ${x}, Y: ${y}`;
+    const body = document.querySelector('body');
+    body.style.background = `rgb(${y}, ${x}, 40)`;
 }
