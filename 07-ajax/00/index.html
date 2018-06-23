@@ -11,9 +11,18 @@
 
 <body>
   <div class="container pt-5">
-    <button class="btn btn-secondary">Get Data</button>
-    <br>
-    <div id="output"></div>
+    <h2>Chuck Norris Joke Generator</h2>
+    <form class="form">
+      <div class="form-group">
+        <label for="number">Number of jokes: </label>
+        <input type="number" id="number">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-outline-primary get-jokes">Get Jokes</button>
+      </div>
+    </form>
+    <ul class="jokes"></ul>
+
   </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,13 +1,15 @@
-document.querySelector('.btn').addEventListener('click', loadData);
+document.querySelector('form').addEventListener('submit', getJokes);
 
-function loadData() {
-    const xhr = new XMLHttpRequest();
+function getJokes(e) {
+    e.preventDefault();
+    const numOfJokes = e.target.children[0].children[1].value;
+    if ( numOfJokes < 1 ) {
+        alert("please add a number.");
+        return;
+    }
+    console.log(numOfJokes);
+}
 
-    xhr.open('GET', 'data.txt', true);
-    xhr.onload = function() {
-        if ( this.status === 200) {
-            console.log(this.responseText);
-        }
-    };
-    xhr.send();
+function fetchJokes(num) {
+
 }
