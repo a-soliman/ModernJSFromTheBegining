@@ -34,3 +34,9 @@ result1 = string.match(re);
 result2 = string2.match(re); 
 console.log('match() match: ', result1);
 console.log('match() No-match: ', result2);
+
+// search() => returns the index of first match or -1
+result1 = string.search(re);
+result2 = string2.search(re);
+console.log('search() match: ', result1);
+console.log('search() No-match: ', result2);
