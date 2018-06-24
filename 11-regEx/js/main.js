@@ -25,3 +25,12 @@ result1 = re.test('Hello world!');
 result2 = re.test('hey world!'); 
 console.log('test() match: ', result1);
 console.log('test() No-match: ', result2);
+
+
+// match() => returns result array or null
+const string = 'Hello world!';
+const string2 = 'Hey world!';
+result1 = string.match(re);
+result2 = string2.match(re); 
+console.log('match() match: ', result1);
+console.log('match() No-match: ', result2);
