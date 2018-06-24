@@ -40,3 +40,8 @@ result1 = string.search(re);
 result2 = string2.search(re);
 console.log('search() match: ', result1);
 console.log('search() No-match: ', result2);
+
+// replace() => Returns a new string with some or null maches of a pattern
+let newStr = 'Hello There';
+let replacesString = newStr.replace(re, 'Hi');
+console.log(replacesString);
