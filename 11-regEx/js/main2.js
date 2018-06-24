@@ -29,6 +29,9 @@ re = /([0-9]x){3}/; // grouping the () part then applying the quantifiers on the
 
 re = /^([0-9]x){3}$/; // grouping the () part then applying the quantifiers on the gruop, then restrcting the begging and end
 
+// Shorthand character Classws
+re = /\w/; // Word charater - alphnumeric or _
+
 // string to match
 const str = '3x3x3x3x';
 
